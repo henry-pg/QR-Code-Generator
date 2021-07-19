@@ -1,0 +1,163 @@
+html, body {
+    
+    height:100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+.container{
+  /*center*/
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  
+}
+
+#qrcode-container {
+
+  /*styling*/
+  border-radius: 25px;
+  background-color: white;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+}
+
+
+
+.webflow-style-input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 25px;
+  padding: 1.4rem 2rem 1.6rem;
+  background: white;
+}
+.webflow-style-input:after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-position: 0% 0%;
+  
+}
+
+.webflow-style-input input {
+  flex-grow: 1;
+  color: #BFD2FF;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+}
+.webflow-style-input input::-webkit-input-placeholder {
+  color: #7881A1;
+}
+
+.webflow-style-input button {
+  color: #7881A1;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  vertical-align: middle;
+  transition: color 0.25s;
+  border-radius: 25px;
+  border-color: #BFD2FF;
+  background-color: white;
+  
+}
+.webflow-style-input button:hover {
+  color: #BFD2FF;
+}
+
+.mega-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#logo{
+  height:30px;width:30px;
+  color:black;
+}
+
+
+
+.references{
+  
+  margin-top: 40px;
+  
+
+}
+
+#logo:hover{
+  color: white;
+}
+
+.btn{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

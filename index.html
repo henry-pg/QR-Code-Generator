@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Qr code generator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  </head>
+
+  <body>
+    
+
+    <div class = "mega-container">
+          
+      
+      <div class = "container">
+        <!-- qrcode -->
+        <div id="qrcode-container">
+          
+          <div id="qrcode"></div>
+        </div>
+        
+
+        <!-- textbox -->
+        <div class="webflow-style-input">
+          <input class="" type="text" placeholder="insert link here" id="codelink"></input>
+          <button id="button" onclick = "generateCode()" button type="button"> submit </button>
+        </div>
+
+        <!--references-->
+        <div class = "references">
+          <button class = "btn" onclick="download()"><span class="iconify" data-icon="akar-icons:download" data-inline="false" id = "logo"></span></button>
+
+          <button class = "btn" onclick="openimg()"><span class="iconify" data-icon="akar-icons:link-out" data-inline="false" id = "logo"></span></span></button>
+
+          <a id = "h-ref" href="https://www.youtube.com/"><ion-icon name="logo-github" id="logo"></ion-icon></a>
+          
+    
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js'></script>
+    <script src="script.js"></script>
+    
+    
+
+
+  </body>
+</html>
